@@ -1,0 +1,70 @@
+@media screen and (max-width:767px) {
+    .ContainerForBar{
+        padding: 0px 32px;
+        display: flex;
+        justify-content: space-between;
+
+        .right-menu-item {
+            display: none;
+        }
+
+        .profile-icon {
+            display: none;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        input {
+            height: 40px;
+            width: 60%;
+            min-width: 250px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .active {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 72px;
+            right: 0;
+            background-color: #101014;
+
+            li {
+                color: #FFF;
+                font-family: "Noto Sans Georgian";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                padding: 14px 20px 14px 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+            }
+        }
+
+        .search {
+            display: none;
+        }
+
+        .tablet-menu {
+            .tablet-menu-icon {
+                margin-left: 24px;
+                padding-top: 26px;
+                padding-bottom: 26px;
+            }
+
+            div {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

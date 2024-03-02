@@ -1,0 +1,92 @@
+@media screen and (max-width:767px) {
+    .First-slide{
+        margin-bottom: 48px;
+    }
+    .carousel-item {
+        height: 444px;
+
+        .desktop {
+            display: none;
+        }
+
+        .movie-info {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            .title {
+                margin-bottom: 48px;
+                display: flex;
+                justify-content: center;
+
+                img {
+
+                    min-height: 68px;
+                    height: 19vw;
+                }
+            }
+
+            .Description-of-film {
+                display: flex;
+                justify-content: center;
+
+                div {
+                    &:first-child {
+                        margin-bottom: 14px;
+                        font-size: 14px;
+                        margin-bottom: 14px;
+                    }
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+
+            .Save-to-watch-button {
+
+                display: flex;
+                justify-content: center;
+
+                div {
+                    height: 40px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 0px 16px;
+                    display: flex;
+                    justify-content: center;
+
+                    &:first-child {
+                        min-width: 170px;
+                        width: 48vw;
+                        margin-right: 14px;
+                    }
+
+                    &:last-child {
+                        width: 46px;
+
+                        span {
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+   .carousel-control-prev{
+    display: none;
+   }
+   .carousel-control-next{
+    display: none;
+   }
+    .gradient {
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    background-image: linear-gradient(70deg, rgba(11, 12, 18, 0.66) 27.61%, rgba(11, 12, 18, 0.00) 83.9%), linear-gradient(68deg, rgba(11, 12, 18, 1.72) 35.77%, rgba(11, 12, 18, 0.00) 90.19%)
+}
+}
+

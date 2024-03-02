@@ -1,0 +1,189 @@
+<div class="ContainerForBar flex-row-center">
+    <div class="right-menu flex-row-center">
+      <div class="site-name flex-row-center">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="26"
+            viewBox="0 0 31 26"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.5 25.9998H22.2244C14.9357 25.7693 9.09465 20.0501 9.09465 13.0112C9.09465 5.82596 15.1763 0 22.6758 0H0.5V25.9998Z"
+              fill="#147CF6"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M30.4994 26L14.2969 13.0114L30.4994 0V26Z"
+              fill="#5D80AA"
+            />
+          </svg>
+        </span>
+        <span>Movie.ge</span>
+      </div>
+      <div class="right-menu-item">
+        <span>მთავარი</span>
+        <span>ფილმები</span>
+        <span>სერიალები</span>
+        <span>ანიმაციური</span>
+      </div>
+    </div>
+  
+    <div class="left-menu flex-row-center">
+      <div class="search">
+        <input type="text" name="search" placeholder="ძებნა..." />
+      </div>
+      <div class="left-menu-icon flex-row-center">
+        <div class="profile-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="18"
+            viewBox="0 0 17 18"
+            fill="none"
+          >
+            <path
+              d="M16.4434 16.4701L16.4433 16.4698C15.8292 14.8605 14.7407 13.4757 13.3221 12.4987C11.9035 11.5217 10.2217 10.9986 8.49921 10.9986C6.77673 10.9986 5.09487 11.5217 3.67628 12.4987C2.25781 13.4756 1.16945 14.8603 0.555253 16.4694L16.4434 16.4701ZM16.4434 16.4701C16.6222 16.9376 16.2599 17.5 15.6025 17.5M16.4434 16.4701L15.6025 17.5M15.6025 17.5H1.39596C0.739891 17.5 0.377012 16.9385 0.555094 16.4698L15.6025 17.5ZM11.3284 7.32843C10.5782 8.07857 9.56082 8.5 8.49996 8.5C7.43909 8.5 6.42168 8.07857 5.67153 7.32843C4.92139 6.57828 4.49996 5.56087 4.49996 4.5C4.49996 3.43913 4.92139 2.42172 5.67153 1.67157C6.42168 0.921427 7.43909 0.5 8.49996 0.5C9.56082 0.5 10.5782 0.921428 11.3284 1.67157C12.0785 2.42172 12.5 3.43913 12.5 4.5C12.5 5.56087 12.0785 6.57828 11.3284 7.32843Z"
+              stroke="white"
+            />
+          </svg>
+        </div>
+        <div class="tablet-menu">
+          <div (click)="opendropdown()" class="tablet-menu-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+            >
+              <path
+                d="M1.99951 2H19.9995M1.99951 9H19.9995M1.99951 16H19.9995"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="tablet-menu-item">
+            <div
+              [ngClass]="{ show: isdropdownophen, hide: !isdropdownophen }"
+              (click)="opendropdown()"
+            ></div>
+            <ul [ngClass]="{ active: isdropdownophen, hide: !isdropdownophen }">
+              <li class="dropdown-menu-profile">
+                <span class="flex-row-center">
+                  <span class="dropdown-menu-profile-icon ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.9439 16.4701L16.9438 16.4698C16.3296 14.8605 15.2412 13.4757 13.8226 12.4987C12.404 11.5217 10.7222 10.9986 8.9997 10.9986C7.27722 10.9986 5.59536 11.5217 4.17677 12.4987C2.7583 13.4756 1.66994 14.8603 1.05574 16.4694L16.9439 16.4701ZM16.9439 16.4701C17.1227 16.9376 16.7603 17.5 16.1029 17.5M16.9439 16.4701L16.1029 17.5M16.1029 17.5H1.89645C1.24038 17.5 0.877501 16.9385 1.05558 16.4698L16.1029 17.5ZM11.8289 7.32843C11.0787 8.07857 10.0613 8.5 9.00045 8.5C7.93958 8.5 6.92216 8.07857 6.17202 7.32843C5.42187 6.57828 5.00045 5.56087 5.00045 4.5C5.00045 3.43913 5.42187 2.42172 6.17202 1.67157C6.92216 0.921427 7.93958 0.5 9.00045 0.5C10.0613 0.5 11.0787 0.921428 11.8289 1.67157C12.579 2.42172 13.0004 3.43913 13.0004 4.5C13.0004 5.56087 12.579 6.57828 11.8289 7.32843Z"
+                        stroke="white"
+                      /></svg
+                  >
+                </span>
+                  <span>შესვლა</span>
+                </span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="16"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.02393 1.33301L13.3078 7.99967L6.02393 14.6663"
+                      stroke="white"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span>მთავარი</span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="16"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.02393 1.33301L13.3078 7.99967L6.02393 14.6663"
+                      stroke="white"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span>ფილმები</span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="16"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.02393 1.33301L13.3078 7.99967L6.02393 14.6663"
+                      stroke="white"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span>სერიალები</span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="16"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.02393 1.33301L13.3078 7.99967L6.02393 14.6663"
+                      stroke="white"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span>ანიმაციები</span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="16"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.02393 1.33301L13.3078 7.99967L6.02393 14.6663"
+                      stroke="white"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <input type="text" name="search" placeholder="ძებნა..." />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

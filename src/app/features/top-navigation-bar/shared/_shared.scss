@@ -1,0 +1,52 @@
+input[type=text] {
+    padding: 0px 14px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #212327;
+    background: #212327;
+    background-image: url('https://cdn-icons-png.freepik.com/512/9135/9135995.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 10px 8px 10px 40px;
+    color: #7A7C7F;
+
+    font-family: "Noto Sans Georgian";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+
+.dropdown-menu-profile{
+   
+        border-bottom: 1px solid #282830;
+        border-top:1px solid #282830 ;
+    
+}
+.dropdown-menu-profile-icon{
+    padding: 10px 4px;
+    margin-right: 8px;
+    svg {
+        width: 16.987px;
+        height: 18px;
+    }
+}
+.site-name {
+    svg {
+        width: 29.999px;
+        height: 26px;
+        margin-right: 8px;
+    }
+
+    span {
+        color: var(--butt, #147CF6);
+        font-family: Inika;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+    }
+}

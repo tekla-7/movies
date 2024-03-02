@@ -1,0 +1,75 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .ContainerForBar{
+        padding: 0px 32px;
+        display: flex;
+        justify-content: space-between;
+
+        .right-menu-item {
+            display: none;
+        }
+
+        .profile-icon {
+            display: none;
+        }
+
+        .hide {
+            display: none;
+        }
+        input{
+            height: 40px;
+            width: 250px;
+            margin-top: 16px;
+                    margin-bottom: 16px;
+        }
+    
+        .show{
+            width: 60%;
+            height: 100%;
+            opacity: 0.2;
+            background-color: #101014;
+            display: block;
+            position: absolute;
+            top: 72px;
+            left: 0;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .active { 
+            width: 40%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 72px;
+            right: 0;
+            background-color: #101014;
+            
+            li {
+                color: #FFF;
+                font-family: "Noto Sans Georgian";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                padding: 14px 20px 14px 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+            }
+        }
+
+        .tablet-menu {
+            .tablet-menu-icon{
+                    margin-left: 24px;
+                }
+                
+            div {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+}

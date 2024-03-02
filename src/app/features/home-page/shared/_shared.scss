@@ -1,0 +1,49 @@
+.carousel-item {
+    position: relative;
+    .movie-info {
+        position: absolute;
+        display: block;
+        .Description-of-film {
+            div {
+                font-family: "Noto Sans Georgian";
+
+                &:first-child {
+                    color: #7A7C7F;
+                    font-style: normal;
+                }
+            }
+        }
+
+        .Save-to-watch-button {
+            border-radius: 8px;
+            div {
+                align-items: center;
+                font-family: "Noto Sans Georgian";
+                display: flex;
+                border-radius: 8px;
+                font-style: normal;
+                cursor: pointer;
+                &:first-child {
+                    color: #FFF;
+                    background: rgba(20, 124, 246, 0.90);
+                    color: #FFF;
+                    span {
+                        &:first-child {
+                            svg{
+                                width: 13px;
+                            }
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    color: rgba(20, 124, 246, 0.90);
+                    border: 1px solid rgba(20, 124, 246, 0.90);
+
+                }
+
+            }
+        }
+    }
+}

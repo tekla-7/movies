@@ -1,0 +1,48 @@
+@import './style/desktop-1';
+@import'./style/tablet-1';
+@import'./style/mobile-1';
+@import '../shared/shared';
+@import './style/desktop-2';
+@import './style/tablet-2';
+@import './style/mobile-2';
+.ContainerForHomePage {
+   background-color: #17181C;
+   width: 100%;
+   height: 100vh;
+
+   .First-slide {
+      .carousel-item {
+         min-height: 100px;
+         background: no-repeat scroll center scroll;
+         -webkit-background-size: cover;
+         background-size: cover;
+         position: relative;
+      }
+      .carousel-control-prev{
+      
+         left:0px;
+          width: 7%;
+         
+     }
+     .carousel-control-next{
+         right:0px;
+         width: 7%;
+        
+       
+     }
+   }
+  
+   .list {
+      width: 100%;
+      display: grid;
+      gap:0px;
+      overflow-x: auto;
+      grid-template-columns: repeat(10, 1fr);
+      scrollbar-width: none;
+      animation: fade-out;
+      animation-duration: 20s;
+      padding-bottom: 88px;
+      
+  }
+
+}

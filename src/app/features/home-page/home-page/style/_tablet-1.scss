@@ -1,0 +1,76 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .First-slide{
+        margin-bottom: 95px;
+    }
+    .carousel-indicators{
+        position: absolute;
+        left: 7%;
+    }
+    .carousel-item {
+        height: 420.978px;
+        .phone{
+            display:none ;
+        }
+        .movie-info {
+            left: 7%;
+            top: 17%;
+            .title {
+                margin-bottom: 39px;
+                img {
+
+                    height: 109px;
+                }
+            }
+
+            .Description-of-film {
+                div {
+                    &:first-child {
+                        padding-bottom: 10px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        margin-bottom: 23px;
+                    }
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+
+            .Save-to-watch-button {
+              
+
+                div {
+                    padding: 0px 24px;
+                    height: 40px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    span {
+                        &:first-child {
+                            margin-right: 8px;
+                        }
+                    }
+                    &:first-child {
+                        width: 187px;
+                        margin-right: 16px;
+                    }
+
+                    &:last-child {
+                        width: 123px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+.gradient {
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    background-image: linear-gradient(51deg, rgba(11, 12, 18, 0.66) 27.61%, rgba(11, 12, 18, 0.00) 83.9%), linear-gradient(72deg, rgba(11, 12, 18, 1.72) 35.77%, rgba(11, 12, 18, 0.00) 78.19%);
+ }

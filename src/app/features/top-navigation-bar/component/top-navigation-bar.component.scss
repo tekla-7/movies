@@ -1,0 +1,8 @@
+@import './style/desktop';
+ @import'./style/tablet';
+ @import'./style/mobile';
+ @import'../shared/shared';
+.ContainerForBar{
+   background-color: #101014;
+   width: 100%;
+} 
