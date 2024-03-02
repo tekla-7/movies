@@ -8,7 +8,7 @@ import { MoviesDescription } from '../interfaces/movies-description';
 })
 export class MoviesListService {
   constructor(private http: HttpClient) {}
-  get() {
+  getmovies() {
     return this.http.get<any>('http://localhost:3000/movies').pipe(
       map((elements) => {
         let arr: MoviesDescription[] = [];

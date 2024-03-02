@@ -7,6 +7,9 @@ import { TopNavigationBarComponent } from './features/top-navigation-bar/compone
 import { HomePageComponent } from './features/home-page/home-page/home-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselModule } from 'primeng/carousel';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 
 @NgModule({
@@ -22,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    
+    CarouselModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

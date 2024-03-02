@@ -1,10 +1,12 @@
 @media screen and (max-width:767px) {
     .First-slide{
         margin-bottom: 48px;
+        .carousel-item{
+            height: 444px;
+        }
     }
     .carousel-item {
-        height: 444px;
-
+        
         .desktop {
             display: none;
         }

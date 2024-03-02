@@ -1,58 +1,21 @@
-@media screen and (max-width:767px)  {
+@media screen and (max-width:767px) {
     .Second-slide {
         padding: 0 20px;
         background-color: #17181C;
-        
-        .movies-type {
-            width: 100%;
-            display: flex;
 
-            align-items: center;
-            margin-bottom: 20px;
-
-            span {
-                color: #FFF;
-                font-family: "Noto Sans Georgian";
-                font-style: normal;
-
-
-            }
-
-            .movies-type-name {
-                line-height: 20px;
-                font-size: 16px;
-                font-weight: 600;
-                cursor: pointer;
-                padding-right: 11px;
-
-            }
-
-            .see-all {
-
-                cursor: pointer;
-
-                span {
-                    &:first-child {
-                        display: none;
-                    }
-                }
-
-                svg {
-                    width: 14px;
-                    height: 14px;
-                }
-            }
-        }
+        margin-bottom: 32px;
 
         .movie-card {
             margin-right: 20px;
-.hover-info{
-            display: none;
-        }
+
+            .hover-info {
+                display: none;
+            }
+
             img {
                 width: 160.795px;
                 height: 203.838px;
-                border-radius: 4px;
+                border-radius: 2px;
                 margin-bottom: 8px;
             }
 
@@ -75,16 +38,107 @@
         }
 
         .carousel-control-prev {
-            left: -32px;
-            width: 32px;
-            height: 425px;
+
+            left: -20px;
+            width: 20px;
+            height: 230px;
         }
 
         .carousel-control-next {
+            right: -20px;
+            width: 20px;
+            height: 230px;
+        }
+    }
 
-            right: -32px;
-            width: 32px;
-            height: 425px;
+    .movies-type {
+        width: 100%;
+        display: flex;
+
+        align-items: center;
+        margin-bottom: 20px;
+
+        span {
+            color: #FFF;
+            font-family: "Noto Sans Georgian";
+            font-style: normal;
+
+
+        }
+
+        .movies-type-name {
+            line-height: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            padding-right: 11px;
+
+        }
+
+        .see-all {
+
+            cursor: pointer;
+
+            span {
+                &:first-child {
+                    display: none;
+                }
+            }
+
+            svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+
+    .Third-slide, .Fourth-slide{
+        padding: 0 20px;
+        background-color: #17181C;
+
+        margin-bottom: 32px;
+        .Series-card {
+            margin-right: 16px;
+
+            .hover-info {
+                display: none;
+            }
+
+            img {
+                width: 239.354px;
+                height: 155.832px;
+                border-radius: 2px;
+                margin-bottom: 8px;
+            }
+
+            div {
+                overflow: hidden;
+                color: #FFF;
+                text-overflow: ellipsis;
+                font-family: "Noto Sans Georgian";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+                white-space: unset;
+            }
+        }
+
+        .carousel-control-prev {
+
+            left: -20px;
+            width: 20px;
+            height: 184px;
+        }
+
+        .carousel-control-next {
+            right: -20px;
+            width: 20px;
+            height: 184px;
         }
     }
 }

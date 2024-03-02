@@ -1,81 +1,146 @@
 @media screen and (min-width:768px) and (max-width:1023px) {
-   
+
     .Second-slide {
-    
+
         padding: 0 32px;
         background-color: #17181C;
-        .movies-type {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 32px;
 
-        span {
-            color: #FFF;
-            font-family: "Noto Sans Georgian";
-            font-style: normal;
+       margin-bottom: 58px;
 
-        }
+        .movie-card {
+            margin-right: 20px;
 
-        .movies-type-name {
-            line-height: 32px;
-            font-size: 22px;
-            font-weight: 600;
-            cursor: pointer;
-        }
+            .hover-info {
+                display: none;
+            }
 
-        .see-all {
-            font-size: 14px;
-            font-weight: 500;
-            padding: 10px 16px;
-            cursor: pointer;
+            img {
+                width: 306.667px;
+                height: 388.757px;
+                border-radius: 4px;
+                margin-bottom: 11px;
+            }
 
-            svg {
-                width: 16px;
-                height: 16px;
+            div {
+                overflow: hidden;
+                color: #FFF;
+                text-overflow: ellipsis;
+                font-family: "Noto Sans Georgian";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+                white-space: unset;
             }
         }
-    }
 
-    .movie-card {
-        margin-right: 20px;
-.hover-info{
-    display: none;
-}
-        img {
-            width: 306.667px;
-height: 388.757px;
-            border-radius: 4px;
-            margin-bottom: 11px;
+        .carousel-control-prev {
+
+            left: -32px;
+            width: 32px;
+            height: 425px;
         }
 
-        div {
-            overflow: hidden;
-            color: #FFF;
-            text-overflow: ellipsis;
-            font-family: "Noto Sans Georgian";
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 24px;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            display: -webkit-box;
-            overflow: hidden;
-            white-space: unset;
+        .carousel-control-next {
+            right: -32px;
+            width: 32px;
+            height: 425px;
         }
     }
-    .carousel-control-prev{
-      
-        left:-32px;
-        width: 32px;
-         height: 425px;
+
+    .Third-slide {
+        padding: 0 32px;
+       
+            .Series-card{
+                .hover-info {
+                    display: none;
+                }
+    
+                margin-right: 20.13px;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    width: 467.9px;
+                    height: 305.1px;
+                    border-radius: 4px;
+                    margin-bottom: 12px;
+                }
+
+                div {
+                    overflow: hidden;
+                    color: #FFF;
+                    text-overflow: ellipsis;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    white-space: unset;
+                }
+
+            
+
+            }
+            .carousel-control-prev {
+
+                left: -32px;
+                width: 32px;
+                height: 341px;
+            }
+    
+            .carousel-control-next {
+                right: -32px;
+                width: 32px;
+                height: 341px;
+            }
     }
-    .carousel-control-next{
-        right:-32px;
-        width: 32px;
-        height: 425px;
-    }
-}
+    
+    
+    
+    
+    
+    
+    
+    .movies-type {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+
+            span {
+                color: #FFF;
+                font-family: "Noto Sans Georgian";
+                font-style: normal;
+
+            }
+
+            .movies-type-name {
+                line-height: 32px;
+                font-size: 22px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .see-all {
+                font-size: 14px;
+                font-weight: 500;
+                padding: 10px 16px;
+                cursor: pointer;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
 }
