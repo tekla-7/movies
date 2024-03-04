@@ -1,0 +1,22 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .my-footer{
+        padding: 31px 32px;
+       display: flex;
+       align-items: center;
+            .icon {
+          width: 29.999px;
+          height: 26px;
+        }
+    
+        .name {
+          margin-left: 8px;
+          color: var(--butt, #147CF6);
+          font-family: Inika;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
+        }
+      }
+
+}

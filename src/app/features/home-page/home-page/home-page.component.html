@@ -369,7 +369,7 @@
     </div>
     <div id="carouselExampleControls" class="carousel slide">
       <div class="carousel-inner slide list">
-        <ng-container *ngFor="let movie of movieslist; let i = index">
+        <ng-container *ngFor="let movie of serieslist; let i = index">
           <div class="carousel-item active">
             <div class="Series-card">
               <img src="{{ movie.img }}" alt="i" />
@@ -379,6 +379,8 @@
               <div>
                 <div class="imdb">IMDB : {{ movie.imdb }}</div>
                 <div class="genre">{{ movie.genre }}</div>
+                <div class="season">სეზონი : {{movie.season?.length}}</div>
+                <div></div>
                 <div class="description">{{ movie.description }}</div>
               </div>
               <div class="watch-icons">
@@ -459,7 +461,7 @@
     </div>
     <div id="carouselExampleControls" class="carousel slide">
       <div class="carousel-inner slide list">
-        <ng-container *ngFor="let movie of movieslist; let i = index">
+        <ng-container *ngFor="let movie of animationlist; let i = index">
           <div class="carousel-item active">
             <div class="Series-card">
               <img src="{{ movie.img }}" alt="i" />
@@ -469,6 +471,7 @@
               <div>
                 <div class="imdb">IMDB : {{ movie.imdb }}</div>
                 <div class="genre">{{ movie.genre }}</div>
+                <div class="season" *ngIf="movie.season?.length">სეზონი : {{movie.season?.length}}</div>
                 <div class="description">{{ movie.description }}</div>
               </div>
               <div class="watch-icons">
@@ -526,5 +529,63 @@
       </button>
     </div>
   </div>
-  <div class="Fifth-slide"></div>
+  <div class="Fifth-slide">
+    <div class="movies-type">
+      <span class="movies-type-name">მსახიობები</span>
+      <span class="see-all">
+        <span>ყველას ნახვა</span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M1.6665 10H18.3332M18.3332 10L10.8332 2.5M18.3332 10L10.8332 17.5"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg> </span
+      ></span>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide">
+      <div class="carousel-inner slide list">
+        <ng-container *ngFor="let actor of aActorsActressesList; let i = index">
+          <div class="carousel-item active">
+            <div class="Series-card">
+              <img src="{{ actor.img }}" alt="i" />
+              <div class="movies-title">{{ actor.name}}</div>
+            </div>
+           
+          </div>
+        </ng-container>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        (click)="prevtslide(4)"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        (click)="nextslider(4)"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+

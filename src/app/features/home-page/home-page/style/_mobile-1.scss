@@ -1,9 +1,18 @@
 @media screen and (max-width:767px) {
+    .ContainerForHomePage{
+        padding-top: 64px;
+    }
     .First-slide{
         margin-bottom: 48px;
         .carousel-item{
             height: 444px;
         }
+        .carousel-control-prev{
+            display: none;
+           }
+           .carousel-control-next{
+            display: none;
+           }
     }
     .carousel-item {
         
@@ -78,12 +87,7 @@
             }
         }
     }
-   .carousel-control-prev{
-    display: none;
-   }
-   .carousel-control-next{
-    display: none;
-   }
+   
     .gradient {
     position: absolute;
     height: 101%;

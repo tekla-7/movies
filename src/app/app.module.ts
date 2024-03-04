@@ -9,15 +9,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'primeng/carousel';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-
+import { SwiperModule } from 'swiper/angular';
+import { FooterComponent } from './core/component/footer/footer.component';
+import { MoviesListComponent } from './features/movies-list/component/movies-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    
     TopNavigationBarComponent,
-    HomePageComponent
+    HomePageComponent,
+    FooterComponent,
+   MoviesListComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     HttpClientModule,
     ReactiveFormsModule,
     CarouselModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

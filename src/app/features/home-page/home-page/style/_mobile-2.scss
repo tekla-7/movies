@@ -2,9 +2,7 @@
     .Second-slide {
         padding: 0 20px;
         background-color: #17181C;
-
         margin-bottom: 32px;
-
         .movie-card {
             margin-right: 20px;
 
@@ -17,6 +15,8 @@
                 height: 203.838px;
                 border-radius: 2px;
                 margin-bottom: 8px;
+                object-fit: cover;
+
             }
 
             div {
@@ -94,8 +94,6 @@
 
     .Third-slide, .Fourth-slide{
         padding: 0 20px;
-        background-color: #17181C;
-
         margin-bottom: 32px;
         .Series-card {
             margin-right: 16px;
@@ -109,6 +107,8 @@
                 height: 155.832px;
                 border-radius: 2px;
                 margin-bottom: 8px;
+                object-fit: cover;
+
             }
 
             div {
@@ -139,6 +139,44 @@
             right: -20px;
             width: 20px;
             height: 184px;
+        }
+    }
+    .Fifth-slide{
+        padding: 0 20px;
+        padding-bottom: 56px;
+        .Series-card {
+            margin-right: 16px;
+
+            img {
+                width: 97.163px;
+                height: 100.863px;
+                border-radius: 4px;
+                margin-bottom: 4px;
+                object-fit: cover;
+
+            }
+
+            div {
+                color: #FFF;
+font-family: "Noto Sans Georgian";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+            }
+        }
+
+        .carousel-control-prev {
+
+            left: -20px;
+            width: 20px;
+            height: 125px;
+        }
+
+        .carousel-control-next {
+            right: -20px;
+            width: 20px;
+            height: 125px;
         }
     }
 }

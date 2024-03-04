@@ -1,0 +1,218 @@
+@media screen and (min-width:1024px) {
+    .movie-list {
+        .elements {
+            padding-top: 72px;
+            width: 100%;
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+
+        .title {
+            margin-top: 56px;
+            padding-left: 3px;
+            padding-bottom: 40px;
+            color: #FFF;
+            font-family: "Noto Sans Georgian";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+        }
+
+        .filter {
+            padding: 0 3px;
+            border-radius: 8px;
+            margin-bottom: 88px;
+            background: #212327;
+            height: 72px;
+            width: 100%;
+
+            .dropdown {
+                background-color: #212327 !important;
+                width: 227px;
+
+                .my-dropdown {
+                    width: 100%;
+                    background-color: #212327;
+                    border: #212327 solid 1px;
+                    padding: 12px 24px;
+
+                    .type {
+                        font-family: "Noto Sans Georgian";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        color: #FFF;
+                        margin-right: 24px;
+                    }
+
+                    .dropdown-icon {
+                        margin: 0;
+                    }
+                }
+
+                .dropdown-menu {
+                    width: 227px;
+                    padding: 0 16px;
+                    background-color: #212327 !important;
+
+                    .form-check {
+                        padding: 10px 0;
+                        width: 100%;
+                       display: flex;
+                       
+                       align-items: center;
+                        .form-check-label{
+                            margin-left: 8px;
+                            color: #999FA7;
+                            font-family: "Noto Sans Georgian";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 20px
+                        }
+                        .form-check-input{
+                            width: 20px;
+height: 20px;
+margin: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .list {
+            width: 100%;
+            padding-bottom: 76px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row-gap: 56px;
+            grid-column-gap: 24px;
+            padding-bottom: 100px;
+
+            .Series-card {
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 278px;
+
+                    border-radius: 4px;
+                    margin-bottom: 12px;
+                    object-fit: cover;
+
+                }
+
+                .movies-title {
+                    overflow: hidden;
+                    color: #FFF;
+                    text-overflow: ellipsis;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    height: 36px;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    white-space: unset;
+                }
+
+                &:hover {
+
+
+                    .hover-info {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            .hover-info {
+                opacity: 0;
+                cursor: auto;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 4px;
+                background: rgba(33, 35, 39, 0.95);
+                width: 100%;
+                height: 326px;
+                padding: 13px;
+
+                .movie-title {
+                    color: #FFF;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #343434;
+                    margin-bottom: 16px;
+                }
+
+                .imdb {
+                    color: #FFF;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    margin-bottom: 4px;
+                }
+
+                .genre,
+                .season {
+                    color: #7A7C7F;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-bottom: 5px;
+                }
+
+                .description {
+                    padding-top: 7px;
+                    color: #FFF;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    white-space: unset;
+                }
+
+                .watch-icons {
+
+                    position: absolute;
+                    bottom: 16px;
+
+                    .watch-icon {
+                        padding: 9.5px 11px;
+                        cursor: pointer;
+                        margin-right: 8px;
+
+                        svg {
+                            width: 18px;
+                            height: 21px;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}

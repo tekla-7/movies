@@ -1,6 +1,11 @@
 @import '../../shared/shared';
 @media screen and (min-width:1024px) {
+    .ContainerForHomePage{
+        padding-top: 72px;
+    }
     .First-slide{
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
         margin-bottom: 148px;
     .carousel-item {
         height: 592px;

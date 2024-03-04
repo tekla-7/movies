@@ -1,10 +1,7 @@
 @media screen and (min-width:768px) and (max-width:1023px) {
 
     .Second-slide {
-
         padding: 0 32px;
-        background-color: #17181C;
-
        margin-bottom: 58px;
 
         .movie-card {
@@ -19,6 +16,8 @@
                 height: 388.757px;
                 border-radius: 4px;
                 margin-bottom: 11px;
+                object-fit: cover;
+
             }
 
             div {
@@ -52,9 +51,9 @@
         }
     }
 
-    .Third-slide {
+    .Third-slide , .Fourth-slide{
         padding: 0 32px;
-       
+        margin-bottom: 58px;
             .Series-card{
                 .hover-info {
                     display: none;
@@ -69,6 +68,8 @@
                     height: 305.1px;
                     border-radius: 4px;
                     margin-bottom: 12px;
+                    object-fit: cover;
+
                 }
 
                 div {
@@ -103,7 +104,55 @@
                 height: 341px;
             }
     }
+    .Fifth-slide{
+        padding: 0 32px;
+      padding-bottom: 97px;
+        .carousel-item {
+            .Series-card {
+                margin-right: 18px;
+                position: relative;
+                cursor: pointer;
+                background-size: auto;
+                img {
+                    height: 184.639px;;
+    width: 177.8px;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                    object-fit: cover;
+                }
     
+                .movies-title {
+                    width: 177.8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #FFF;
+
+font-family: "Noto Sans Georgian";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+                }
+    
+                
+    
+            }
+    
+        }
+        .carousel-control-prev {
+            left: -32px;
+            width: 32px;
+            height: 210px;
+    
+        }
+    
+        .carousel-control-next {
+            right: -32px;
+            width: 32px;
+            height: 210px;
+        }
+    }
     
     
     
@@ -115,7 +164,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 32px;
 
             span {
                 color: #FFF;
