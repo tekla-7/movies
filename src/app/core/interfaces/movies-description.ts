@@ -4,5 +4,6 @@ export interface MoviesDescription {
     img?:string,
     imdb?:number,
     genre?:string[],
-    description?:string
+    description?:string,
+    video?:string
 }

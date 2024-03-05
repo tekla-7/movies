@@ -12,6 +12,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SwiperModule } from 'swiper/angular';
 import { FooterComponent } from './core/component/footer/footer.component';
 import { MoviesListComponent } from './features/movies-list/component/movies-list.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatSelectModule} from '@angular/material/select';
+import { WatchingMovieComponent } from './features/watching-movie/component/watching-movie.component';
 
 
 @NgModule({
@@ -20,7 +23,8 @@ import { MoviesListComponent } from './features/movies-list/component/movies-lis
     TopNavigationBarComponent,
     HomePageComponent,
     FooterComponent,
-   MoviesListComponent
+   MoviesListComponent,
+   WatchingMovieComponent
   ],
   imports: [
     BrowserModule,
@@ -31,8 +35,11 @@ import { MoviesListComponent } from './features/movies-list/component/movies-lis
     CarouselModule,
     SlickCarouselModule,
     SwiperModule,
+    MatSelectModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

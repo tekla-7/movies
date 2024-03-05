@@ -18,7 +18,10 @@
             font-weight: 600;
             line-height: 32px;
         }
-
+.mobile-icon{
+    display: none;
+}
+  
         .filter {
             padding: 0 3px;
             border-radius: 8px;
@@ -26,8 +29,7 @@
             background: #212327;
             height: 72px;
             width: 100%;
-
-            .dropdown {
+          .dropdown {
                 background-color: #212327 !important;
                 width: 227px;
 
@@ -87,7 +89,7 @@ margin: 10px;
             width: 100%;
             padding-bottom: 76px;
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 1fr 1fr 1fr;
             grid-row-gap: 56px;
             grid-column-gap: 24px;
             padding-bottom: 100px;
@@ -126,6 +128,7 @@ margin: 10px;
 
 
                     .hover-info {
+                        display: block;
                         opacity: 1;
                     }
                 }

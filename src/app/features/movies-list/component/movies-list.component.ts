@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { MoviesListService } from '../../../core/service/movies-list.service';
 import { Subject, takeUntil } from 'rxjs';
 import { Series } from '../../../core/interfaces/series';
+import { FormControl } from '@angular/forms';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-movies-list',
@@ -11,20 +13,48 @@ import { Series } from '../../../core/interfaces/series';
 export class MoviesListComponent {
   private _destorySubj$ = new Subject();
   error: string = '';
-  mylist :number[]=[];
   serieslist:Series[]=[];
   isActive2:boolean=false;
-constructor(private movieslistService:MoviesListService){
-  this.movieslistService.getanimation().subscribe(
-    (elements) => {
-      this.serieslist = elements;
-      console.log(this.serieslist)
-      takeUntil(this._destorySubj$);
-   },
-   (error) => {
-     this.error = error.message;
-   }
-  )
+ activpagename:string='';
+constructor(private movieslistService:MoviesListService , private activatedRoute:ActivatedRoute){
+  this.activatedRoute.params.subscribe(
+    (params:Params)=>{
+     if(params['name']=='Movie'){
+      this.movieslistService.getmovies().subscribe(
+        (elements) => {
+          this.serieslist = elements;
+          takeUntil(this._destorySubj$);
+       },
+       (error) => {
+         this.error = error.message;
+       }
+      )
+     }else if(params['name']=='Series'){
+      this.movieslistService.getseries().subscribe(
+        (elements) => {
+          this.serieslist = elements;
+          takeUntil(this._destorySubj$);
+       },
+       (error) => {
+         this.error = error.message;
+       }
+      )
+     }else if(params['name']=='Animation'){
+      this.movieslistService.getanimation().subscribe(
+        (elements) => {
+          this.serieslist = elements;
+          takeUntil(this._destorySubj$);
+       },
+       (error) => {
+         this.error = error.message;
+       }
+      )
+     }
+      takeUntil(this._destorySubj$);},
+      (error) => {
+        this.error = error.message;
+      })
+ 
 }
 call(id:number){
 if(id==2){

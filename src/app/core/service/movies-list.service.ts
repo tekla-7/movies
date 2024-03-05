@@ -22,6 +22,7 @@ export class MoviesListService {
           obj.genre=[...element.genre];
           obj.description=element.description;
           obj.img=element.img;
+          obj.video=element.video;
           arr.push(obj)
         }
         
@@ -43,6 +44,7 @@ export class MoviesListService {
           obj.description=element.description;
           obj.img=element.img;
           obj.season=element.season;
+          obj.video=element.video;
           arr.push(obj)
         }
         
@@ -63,6 +65,7 @@ export class MoviesListService {
           obj.description=element.description;
           obj.img=element.img;
           obj.season=element.season;
+          obj.video=element.video;
           arr.push(obj)
         }
         

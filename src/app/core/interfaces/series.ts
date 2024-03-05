@@ -6,4 +6,5 @@ export interface Series {
     genre?:string[],
     description?:string,
     season?:number[][],
+    video?:string,
 }

@@ -25,12 +25,16 @@
           background: #212327;
           height: 72px;
           width: 100%;
+         
+        }
+         .mobile-icon{
+            display: none;
         }
         .list{
           width: 100%;
           padding-bottom: 76px;
           display: grid;
-          grid-template-columns: auto auto auto;
+          grid-template-columns: 1fr 1fr 1fr;
           grid-row-gap: 40px;
           grid-column-gap: 19.88px;
           padding-bottom: 100px;
@@ -63,11 +67,12 @@ line-height: 20px;
     
               }
     
-              .hover-info {
-                  opacity: 0;
-              }
+              
     
           }
       }
 
 }
+.hover-info {
+                  display: none;
+              }
