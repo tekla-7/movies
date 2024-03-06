@@ -3,6 +3,7 @@ import { MoviesListService } from '../../../core/service/movies-list.service';
 import { Subject, takeUntil } from 'rxjs';
 import { MoviesDescription } from '../../../core/interfaces/movies-description';
 import { DomSanitizer } from '@angular/platform-browser';
+import { ActorsActresses } from '../../../core/interfaces/actors-actresses';
 
 @Component({
   selector: 'app-watching-movie',
@@ -13,9 +14,11 @@ export class WatchingMovieComponent implements OnDestroy{
   private _destorySubj$ = new Subject();
   private sanitizer=inject(DomSanitizer)
   error: string = '';
-  a:any=''
-  movieslist:MoviesDescription[]=[]
+  a:any='';
+  movieslist:MoviesDescription[]=[];
+  actorlist:ActorsActresses[]=[];
   constructor(private movieslistService:MoviesListService){
+
     this.movieslistService.getmovies().subscribe(
     (elements) => {
        this.movieslist = elements;
@@ -24,6 +27,14 @@ export class WatchingMovieComponent implements OnDestroy{
     (error) => {
       this.error = error.message;
     })
+    this.movieslistService.getactor().subscribe(
+      (elements) => {
+         this.actorlist = elements;
+         takeUntil(this._destorySubj$);
+      },
+      (error) => {
+        this.error = error.message;
+      })
     this.a=this.sanitizer.bypassSecurityTrustResourceUrl(
       'https://www.youtube.com/embed/r5X-hFf6Bwo?si=dqrN0tO2bvw4jYph'
      )

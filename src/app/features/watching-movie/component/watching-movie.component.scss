@@ -1,0 +1,14 @@
+@import './style/desktop';
+@import './style/mobile';
+@import './style/tablet';
+.list {
+    width: 100%;
+    display: grid;
+    
+    overflow-x: auto;
+    grid-template-columns: repeat(10, 1fr);
+    scrollbar-width:none;
+    animation: fade-out;
+    animation-duration: 20s;
+    
+}

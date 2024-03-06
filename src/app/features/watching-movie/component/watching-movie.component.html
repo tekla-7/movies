@@ -1,7 +1,139 @@
-<iframe width="991" height="515" 
+<!-- <iframe width="991" height="551" 
 [src]="a" 
 title="YouTube video player" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 allowfullscreen
-id="yourIframeId"></iframe>
-<div>{{movieslist[0].video}}</div>
+id="yourIframeId"></iframe> -->
+<div class="watching-movie-page">
+  <div class="watch-movie">
+    <div class="road">
+      <span> მთავარი</span>
+      /
+      <span>სერიალი</span> /
+      <span class="active-page-name">სახელი</span>
+    </div>
+    <div class="img-video">
+      <div class="img">
+        <img src="{{ movieslist[0].img }}" alt="" />
+        <span class="watch-trailer">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M22 8L16 12L22 16V8Z"
+                stroke="#17181C"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 6H4C2.89543 6 2 6.89543 2 8V16C2 17.1046 2.89543 18 4 18H14C15.1046 18 16 17.1046 16 16V8C16 6.89543 15.1046 6 14 6Z"
+                stroke="#17181C"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span>თრეილერი</span>
+        </span>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="100%"
+          [src]="a"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          id="yourIframeId"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="information-ebout-film">
+    <div class="info">
+      <div class="title">{{ movieslist[0].title }}</div>
+      <div class="info-list">
+        <img src="{{ movieslist[0].img }}" alt="" />
+        <div class="info-list-border">
+          <div>
+            <span class="info-list-name">IMDB:</span
+            ><span class="info-list-name-2">{{ movieslist[0].imdb }}</span>
+          </div>
+          <div>
+            <span class="info-list-name">ჟანრი:</span
+            ><span class="info-list-name-2">{{ movieslist[0].genre }}</span>
+          </div>
+          <div>
+            <span class="info-list-name">რეჟისორი</span
+            ><span>ანნნნნნნნნნ ნნნნნნნნნნნნნნნნნნნნ</span>
+          </div>
+          <div><span class="info-list-name">სტუდია:</span><span></span></div>
+          <div>
+            <span class="info-list-name">გამოშვების წელი:</span><span></span>
+          </div>
+          <div>
+            <span class="info-list-name">ხანგრძლივობა:</span><span></span>
+          </div>
+          <div>
+            <span class="info-list-name">სეზონების რაოდენობა: </span
+            ><span></span>
+          </div>
+          <div>
+            <span class="info-list-name">სერიების რაოდენობა</span><span></span>
+          </div>
+          <div><span class="info-list-name">ქვეყანა:</span><span></span></div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="description-title">აღწერა</div>
+        <div class="description-text">{{ movieslist[0].description }}</div>
+      </div>
+    </div>
+    <div class="actors">
+      <div class="actors-title">მსახიობები</div>
+      <div class="actors-list list">
+        <div class="actors-card" *ngFor="let actor of actorlist">
+          <img src="{{ actor.img }}" alt="" />
+          <div>{{ actor.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="recommendations">
+    <div class="recommendations-title">
+      <div>რეკომენდირებული</div>
+      <div class="see-all">
+        <span>ყველას ნახვა</span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M1.66675 10H18.3334M18.3334 10L10.8334 2.5M18.3334 10L10.8334 17.5"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="recommendations-list list">
+      <div class="recommendations-card" *ngFor="let movie of movieslist">
+        <img src="{{ movie.img }}" alt="" />
+        <div>{{ movie.title }}</div>
+      </div>
+    </div>
+  </div>
+</div>

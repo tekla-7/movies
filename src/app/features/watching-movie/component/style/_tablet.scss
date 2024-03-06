@@ -1,0 +1,253 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .watching-movie-page {
+        padding-top: 120px;
+        background-color: #17181C;
+        padding: 0 32px;
+
+
+        .watch-movie {
+            padding-top: 128px;
+            padding-bottom: 24px;
+
+            .road {
+                padding: 10px 0;
+                color: #7A7C7F;
+                font-family: "Noto Sans Georgian";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+
+                span {
+                    padding: 0 8px;
+                }
+
+                .active-page-name {
+                    color: #FFF;
+                }
+            }
+
+            .img-video {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .img {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-right: 24px;
+                    height: 41.4285vw;
+
+                    img {
+                        width: 23.53vw;
+                        height: 100%;
+                        border-radius: 2px;
+                        object-fit: cover;
+                        margin-bottom: 8px;
+                    }
+
+                    .watch-trailer {
+                        display: flex;
+                        width: 23.53vw;
+                        height: 48px;
+                        padding: 10px;
+                        border-radius: 8px;
+                        background-color: #FFF;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: row;
+                        color: #17181C;
+                        font-family: "Noto Sans Georgian";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+
+                        svg {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .video {
+
+                    width: 73.6328vw;
+                    height: 41.4285vw;
+
+                    iframe {
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+
+        .information-ebout-film {
+            border-radius: 8px;
+            background: #212327;
+            padding: 24px 16px;
+            margin-bottom: 72px;
+
+            .info {
+                .title {
+                    color: #FFF;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 26px;
+                    margin-bottom: 32px;
+                }
+
+                .info-list {
+                    img {
+                        display: none;
+                    }
+
+                    margin-bottom: 16px;
+
+                    div {
+                        margin-bottom: 4px;
+                        font-family: "Noto Sans Georgian";
+
+                        span {
+                            &:last-child {
+                                color: #FFF;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .info-list-name {
+                            margin-right: 8px;
+                            color: #999FA7;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .description {
+                    margin-bottom: 40px;
+                    font-family: "Noto Sans Georgian";
+                    color: #FFF;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    .description-title {
+
+                        margin-bottom: 8px;
+                        font-weight: 800;
+
+                    }
+
+                    .description-text {
+                        width: 80%;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .actors {
+
+                .actors-title {
+                    margin-bottom: 24px;
+                    color: #FFF;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 24px;
+                }
+
+                .list {
+                    gap: 18px;
+                }
+
+                .actors-list {
+
+                    .actors-card {
+                        img {
+                            width: 112px;
+                            height: 114px;
+                            border-radius: 8px;
+                            object-fit: cover;
+                            margin-bottom: 8px;
+                        }
+
+                        div {
+                            color: #FFF;
+
+                            font-family: "Noto Sans Georgian";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        .recommendations {
+            padding-bottom: 100px;
+
+            .list {
+                gap: 20px;
+            }
+
+            .recommendations-title {
+                margin-bottom: 40px;
+                color: #FFF;
+                font-family: "Noto Sans Georgian";
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .see-all {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+
+                    span {
+                        &:first-child {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+
+            .recommendations-card {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 467.9px;
+                    height: 305px;
+                    border-radius: 4px;
+                    margin-bottom: 12px;
+                    object-fit: cover;
+                }
+
+                div {
+                    color: #FFF;
+                    font-family: "Noto Sans Georgian";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+}
