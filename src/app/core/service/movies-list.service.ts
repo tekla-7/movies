@@ -15,7 +15,18 @@ export class MoviesListService {
       map((elements) => {
         let arr: MoviesDescription[] = [];
         for (let element of elements) {
-          let obj: MoviesDescription = {};
+          let obj: MoviesDescription = {
+            id:0,
+            title:'',
+            imdb:0,
+            genre:[],
+            description:'',
+            video:'',
+            rejissor:'',
+            year:0,
+            duration:0,
+            country:'',
+            studio:''};
           obj.id=element.id;
           obj.title=element.title;
           obj.imdb=element.imdb;
@@ -23,6 +34,11 @@ export class MoviesListService {
           obj.description=element.description;
           obj.img=element.img;
           obj.video=element.video;
+          obj.rejissor=element.rejissor
+          obj.year=element.year
+          obj.duration=element.duration
+          obj.country=element.country
+          obj.studio=element.studio
           arr.push(obj)
         }
         
@@ -85,6 +101,39 @@ export class MoviesListService {
           arr.push(obj)
         }
         
+        return arr;
+      })
+    );
+  }
+  get(name:string , id:string){
+    return this.http.get<any>('http://localhost:3000/'+name+'/'+id).pipe(
+      map((element) => {
+        let arr: MoviesDescription[] = [];
+          let obj:MoviesDescription = {
+            id:0,
+            title:'',
+            imdb:0,
+            genre:[],
+            description:'',
+            video:'',
+            rejissor:'',
+            year:0,
+            duration:0,
+            country:'',
+            studio:''};
+            obj.id=element.id;
+            obj.title=element.title;
+            obj.imdb=element.imdb;
+            obj.genre=[...element.genre];
+            obj.description=element.description;
+            obj.img=element.img;
+            obj.video=element.video;
+            obj.rejissor=element.rejissor
+            obj.year=element.year
+            obj.duration=element.duration
+            obj.country=element.country
+            obj.studio=element.studio
+            arr.push(obj)
         return arr;
       })
     );

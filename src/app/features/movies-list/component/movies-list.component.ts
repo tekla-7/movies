@@ -19,7 +19,7 @@ export class MoviesListComponent {
 constructor(private movieslistService:MoviesListService , private activatedRoute:ActivatedRoute){
   this.activatedRoute.params.subscribe(
     (params:Params)=>{
-     if(params['name']=='Movie'){
+     if(params['name']=='movies'){
       this.movieslistService.getmovies().subscribe(
         (elements) => {
           this.serieslist = elements;
@@ -29,7 +29,7 @@ constructor(private movieslistService:MoviesListService , private activatedRoute
          this.error = error.message;
        }
       )
-     }else if(params['name']=='Series'){
+     }else if(params['name']=='series'){
       this.movieslistService.getseries().subscribe(
         (elements) => {
           this.serieslist = elements;
@@ -39,7 +39,7 @@ constructor(private movieslistService:MoviesListService , private activatedRoute
          this.error = error.message;
        }
       )
-     }else if(params['name']=='Animation'){
+     }else if(params['name']=='animation'){
       this.movieslistService.getanimation().subscribe(
         (elements) => {
           this.serieslist = elements;

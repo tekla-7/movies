@@ -1,9 +1,3 @@
-<!-- <iframe width="991" height="551" 
-[src]="a" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-allowfullscreen
-id="yourIframeId"></iframe> -->
 <div class="watching-movie-page">
   <div class="watch-movie">
     <div class="road">
@@ -14,7 +8,7 @@ id="yourIframeId"></iframe> -->
     </div>
     <div class="img-video">
       <div class="img">
-        <img src="{{ movieslist[0].img }}" alt="" />
+        <img src="{{ moviename[0].img }}" alt="" />
         <span class="watch-trailer">
           <span
             ><svg
@@ -47,7 +41,7 @@ id="yourIframeId"></iframe> -->
         <iframe
           width="100%"
           height="100%"
-          [src]="a"
+          [src]="link"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -59,9 +53,9 @@ id="yourIframeId"></iframe> -->
   </div>
   <div class="information-ebout-film">
     <div class="info">
-      <div class="title">{{ movieslist[0].title }}</div>
+      <div class="title">{{ moviename[0].title }}</div>
       <div class="info-list">
-        <img src="{{ movieslist[0].img }}" alt="" />
+        <img src="{{ moviename[0].img }}" alt="" />
         <div class="info-list-border">
           <div>
             <span class="info-list-name">IMDB:</span
@@ -69,32 +63,32 @@ id="yourIframeId"></iframe> -->
           </div>
           <div>
             <span class="info-list-name">ჟანრი:</span
-            ><span class="info-list-name-2">{{ movieslist[0].genre }}</span>
+            ><span class="info-list-name-2">{{ moviename[0].genre }}</span>
           </div>
           <div>
             <span class="info-list-name">რეჟისორი</span
-            ><span>ანნნნნნნნნნ ნნნნნნნნნნნნნნნნნნნნ</span>
+            ><span>{{ moviename[0].rejissor }}</span>
           </div>
-          <div><span class="info-list-name">სტუდია:</span><span></span></div>
+          <div><span class="info-list-name">სტუდია:</span><span>{{ moviename[0].studio}}</span></div>
           <div>
-            <span class="info-list-name">გამოშვების წელი:</span><span></span>
-          </div>
-          <div>
-            <span class="info-list-name">ხანგრძლივობა:</span><span></span>
+            <span class="info-list-name">გამოშვების წელი:</span><span>{{ moviename[0].year }}</span>
           </div>
           <div>
+            <span class="info-list-name">ხანგრძლივობა:</span><span>{{ moviename[0].duration }}</span>
+          </div>
+          <div *ngIf="!ismovie">
             <span class="info-list-name">სეზონების რაოდენობა: </span
             ><span></span>
           </div>
-          <div>
+          <div *ngIf="!ismovie">
             <span class="info-list-name">სერიების რაოდენობა</span><span></span>
           </div>
-          <div><span class="info-list-name">ქვეყანა:</span><span></span></div>
+          <div><span class="info-list-name">ქვეყანა:</span><span>{{ moviename[0].country}}</span></div>
         </div>
       </div>
       <div class="description">
         <div class="description-title">აღწერა</div>
-        <div class="description-text">{{ movieslist[0].description }}</div>
+        <div class="description-text">{{  moviename[0].description }}</div>
       </div>
     </div>
     <div class="actors">
