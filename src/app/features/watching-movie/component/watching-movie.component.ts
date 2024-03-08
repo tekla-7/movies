@@ -27,7 +27,6 @@ export class WatchingMovieComponent implements OnDestroy, OnInit{
         if(params['name']=='movies'){this.ismovie=true}
       this.movieslistService.get(params['name'],params['id']).subscribe(
         (elements) => {
-          
            this.moviename = elements;
            this.link=this.sanitizer.bypassSecurityTrustResourceUrl(
             this.moviename[0].video

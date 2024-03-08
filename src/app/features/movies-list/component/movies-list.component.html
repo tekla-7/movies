@@ -107,7 +107,7 @@ class="dropdown-check-list"
     </div>
     <div class="list">
         <div *ngFor="let movie of serieslist">
-          <div class="Series-card">
+          <div class="Series-card" [routerLink]="[movie.id]">
             <div [routerLink]="[movie.id]">
             <img src="{{ movie.img }}" alt="i" />
             <div class="movies-title">{{ movie.title }}</div></div>
@@ -120,7 +120,7 @@ class="dropdown-check-list"
               <div></div>
               <div class="description">{{ movie.description }}</div>
             </div>
-            <div class="watch-icons" [routerLink]="[movie.id]">
+            <div class="watch-icons" >
               <span class="watch-icon"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
