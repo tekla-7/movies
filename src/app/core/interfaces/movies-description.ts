@@ -10,5 +10,6 @@ export interface MoviesDescription {
     year:number,
     duration:number,
     country:string,
-    studio:string
+    studio:string,
+    season?:number[][],
 }

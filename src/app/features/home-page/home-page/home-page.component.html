@@ -51,10 +51,9 @@
             <div class="Description-of-film">
               <div>Netflix . IMDB: 8.5 . 2023</div>
               <div>
-                revealing Uhtred's destiny and determining the fate of England.
-                The film introduces important new character Ingilmundr, who
-                manipulates Aethelstan through a secret relationship, ultimately
-                leading to his execution.
+                მეფე ედვარდის სიკვდილის შემდეგ ბებანბურგეპი 
+                უჰთრედი და მისი მეგობრები დაშლილ სამეფოში ინგლისის საბოლოოდ 
+                გაერთიანენის იმედით მოგზაურობენ.
               </div>
             </div>
             <div class="Save-to-watch-button flex-row">
@@ -73,7 +72,7 @@
                     />
                   </svg>
                 </span>
-                <span>ფილმის ყურება</span>
+                <span routerLink="/type/movies/5">ფილმის ყურება</span>
               </div>
               <div>
                 <span>
@@ -120,10 +119,10 @@
             <div class="Description-of-film">
               <div>Netflix . IMDB: 8.2 . 2024</div>
               <div>
-                In a world of gifted hunters and monsters, a weak hunter Sung
-                Jinwoo gains extraordinary powers through a mysterious program,
-                leading him to become one of the strongest hunters and
-                conquering even the strongest dungeons.
+                ათი წლის წინ „კარიბჭე“ გამოჩნდა და რეალური სამყარო მაგიის და 
+                მონსტრების სამეფოს დაუკავშირა. ამ საზიზღარ მხეცებთან საბრძოლველად 
+                უბრალო ადამიანებმა მიიღეს ზეადამიანური ძალა და გახდნენ ცნობილი როგორც 
+                'მონადირეები'. ოცი წლის სუნგ ჯინ-ვუ ერთ-ერთი ასეთი მონადი
               </div>
             </div>
             <div class="Save-to-watch-button flex-row">
@@ -142,7 +141,7 @@
                     />
                   </svg>
                 </span>
-                <span>ფილმის ყურება</span>
+                <span routerLink="/type/animation/7">ფილმის ყურება</span>
               </div>
               <div>
                 <span>
@@ -189,10 +188,10 @@
             <div class="Description-of-film">
               <div>Netflix . IMDB: 8.5 . 2024</div>
               <div>
-                An epic that details the checkered rise and fall of French
-                Emperor Napoleon Bonaparte and his relentless journey to power
-                through the prism of his addictive, volatile relationship with
-                his wife, Josephine.
+                ფილმი გვიყვება ნაპოლეონ ბონაპარტეს ცხოვრებისა და მისი სწრაფი, 
+                დაუნდობელი გზის შესახებ იმპერატორობისკენ, პარალელურად კი ფილმში 
+                აღწერილია მისი არაჯანსაღი და ხშირად არამდგრადი 
+                ურთიერთობა მის მეუღლესთან და ერთადერთ ჭეშმარიტ სიყვარულთან ჯოზეფინთან.
               </div>
             </div>
             <div class="Save-to-watch-button flex-row">
@@ -211,7 +210,7 @@
                     />
                   </svg>
                 </span>
-                <span>ფილმის ყურება</span>
+                <span routerLink="/type/movies/6">ფილმის ყურება</span>
               </div>
               <div>
                 <span>
@@ -259,7 +258,7 @@
   <div class="Second-slide">
     <div class="movies-type">
       <span class="movies-type-name">ფილმები</span>
-      <span class="see-all">
+      <span class="see-all" routerLink="/type/movies">
         <span>ყველას ნახვა</span>
         <span>
           <svg
@@ -281,7 +280,7 @@
       <div class="carousel-inner slide list">
         <ng-container *ngFor="let movie of movieslist; let i = index">
           <div class="carousel-item active">
-            <div class="movie-card">
+            <div class="movie-card" [routerLink]="['/type/movies', movie.id]" >
               <img src="{{ movie.img }}" alt="i" />
               <div class="movies-title">{{ movie.title }}</div>
                <div class="hover-info">
@@ -349,7 +348,7 @@
   <div class="Third-slide">
     <div class="movies-type">
       <span class="movies-type-name">სერიალები</span>
-      <span class="see-all">
+      <span class="see-all"routerLink="/type/series">
         <span>ყველას ნახვა</span>
         <span>
           <svg
@@ -371,7 +370,7 @@
       <div class="carousel-inner slide list">
         <ng-container *ngFor="let movie of serieslist; let i = index">
           <div class="carousel-item active">
-            <div class="Series-card">
+            <div class="Series-card" [routerLink]="['/type/series', movie.id]">
               <img src="{{ movie.img }}" alt="i" />
               <div class="movies-title">{{ movie.title }}</div>
                <div class="hover-info">
@@ -441,7 +440,7 @@
   <div class="Fourth-slide">
     <div class="movies-type">
       <span class="movies-type-name">ანიმაციები</span>
-      <span class="see-all">
+      <span class="see-all" routerLink="/type/animation">
         <span>ყველას ნახვა</span>
         <span>
           <svg
@@ -463,7 +462,7 @@
       <div class="carousel-inner slide list">
         <ng-container *ngFor="let movie of animationlist; let i = index">
           <div class="carousel-item active">
-            <div class="Series-card">
+            <div class="Series-card" [routerLink]="['/type/animation', movie.id]">
               <img src="{{ movie.img }}" alt="i" />
               <div class="movies-title">{{ movie.title }}</div>
                <div class="hover-info">
@@ -554,7 +553,7 @@
       <div class="carousel-inner slide list">
         <ng-container *ngFor="let actor of aActorsActressesList; let i = index">
           <div class="carousel-item active">
-            <div class="Series-card">
+            <div class="Series-card" [routerLink]="['person/', actor.id]">
               <img src="{{ actor.img }}" alt="i" />
               <div class="movies-title">{{ actor.name}}</div>
             </div>

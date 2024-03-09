@@ -20,11 +20,17 @@ export class WatchingMovieComponent implements OnDestroy, OnInit{
   moviename:MoviesDescription[]=[];
   actorlist:ActorsActresses[]=[];
   ismovie:boolean=false;
+  type:string=''
   // type:{id:string , name:string}={id:'', name:''}
   constructor(private movieslistService:MoviesListService ,  private activatedRoute:ActivatedRoute){
     this.activatedRoute.params.subscribe(
       (params:Params)=>{
-        if(params['name']=='movies'){this.ismovie=true}
+        if(params['name']=='movies'){
+          this.type='movies'}else if(params['name']=='series'){
+            this.type='series'
+          }else if(params['name']=='animation'){
+            this.type='animation'
+          }
       this.movieslistService.get(params['name'],params['id']).subscribe(
         (elements) => {
            this.moviename = elements;

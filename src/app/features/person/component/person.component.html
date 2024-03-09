@@ -1,0 +1,68 @@
+<div class="person-page">
+  <div class="person">
+    <div class="img-name">
+      <img src="{{ person[0].img }}" alt="" />
+      <div>
+        <div class="name">{{ person[0].name }}</div>
+        <div><span>დაბადების თარიღი</span>{{ person[0].birthday }}</div>
+        <div><span>დაბადების ადგილი</span>{{ person[0].birthplace }}</div>
+      </div>
+    </div>
+    <div class="info">{{person[0].info}}</div>
+  </div>
+  <div class="movies">
+    <div class="list">
+      <div *ngFor="let movie of movielist">
+        <div class="Series-card" [routerLink]="[movie.id]">
+          <div [routerLink]="[movie.id]">
+            <img src="{{ movie.img }}" alt="i" />
+            <div class="movies-title">{{ movie.title }}</div>
+          </div>
+          <div class="hover-info">
+            <div class="movie-title">{{ movie.title }}</div>
+            <div>
+              <div class="imdb">IMDB : {{ movie.imdb }}</div>
+              <div class="genre">{{ movie.genre }}</div>
+              <div class="season" *ngIf="movie.season?.length">
+                სეზონი : {{ movie.season?.length }}
+              </div>
+              <div></div>
+              <div class="description">{{ movie.description }}</div>
+            </div>
+            <div class="watch-icons">
+              <span class="watch-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="22"
+                  viewBox="0 0 18 22"
+                  fill="none"
+                >
+                  <path
+                    d="M16.7334 9.41269L3.22594 1.15051C2.94267 0.977816 2.61865 0.883378 2.28696 0.87683C1.95526 0.870282 1.62777 0.951859 1.33791 1.11323C1.04804 1.27461 0.806183 1.51 0.637018 1.79539C0.467852 2.08078 0.377437 2.40594 0.375 2.73769V19.2621C0.377437 19.5938 0.467852 19.919 0.637018 20.2044C0.806183 20.4898 1.04804 20.7252 1.33791 20.8865C1.62777 21.0479 1.95526 21.1295 2.28696 21.1229C2.61865 21.1164 2.94267 21.0219 3.22594 20.8493L16.7334 12.5871C17.0058 12.4213 17.2309 12.1882 17.3871 11.9102C17.5434 11.6322 17.6254 11.3187 17.6254 10.9999C17.6254 10.681 17.5434 10.3675 17.3871 10.0896C17.2309 9.81158 17.0058 9.57849 16.7334 9.41269ZM2.625 18.5796V3.42019L15.015 10.9999L2.625 18.5796Z"
+                    fill="#147CF6"
+                  />
+                </svg>
+              </span>
+              <span class="watch-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="18"
+                  viewBox="0 0 14 18"
+                  fill="none"
+                >
+                  <path
+                    d="M1.5 15.8778V2.35359C1.5 2.10463 1.57272 1.94837 1.70793 1.81346L1.70945 1.81193C1.84437 1.67672 2.00062 1.604 2.24958 1.604H11.7504C11.9994 1.604 12.1556 1.67672 12.2905 1.81193L12.2921 1.81346C12.4273 1.94837 12.5 2.10462 12.5 2.35359V15.8778L7.39464 13.6851L7 13.5156L6.60536 13.6851L1.5 15.8778Z"
+                    stroke="#147CF6"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

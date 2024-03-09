@@ -12,9 +12,14 @@ export class CreateAccountComponent {
 constructor( private activatedRoute:ActivatedRoute ){
   this.activatedRoute.params.subscribe(
     (params:Params)=>{
-     if(params['registration']=="registration"){
+     if(params['registration']=="sign/-up"){
       this.registration=true;
+     }else{
+      this.registration=false;
      }
     })
+}
+show(){
+this.registration=!this.registration
 }
 }

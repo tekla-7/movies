@@ -98,6 +98,9 @@ export class MoviesListService {
           obj.id=element.id;
           obj.name=element.name;
           obj.img=element.img;
+          obj.series=element.series;
+          obj.movies=element.movies;
+          obj.animation=element.animation
           arr.push(obj)
         }
         
@@ -105,7 +108,26 @@ export class MoviesListService {
       })
     );
   }
-  get(name:string , id:string){
+  getactorID(id:number) {
+    return this.http.get<any>('http://localhost:3000/actors-actresses/'+id).pipe(
+      map((element) => {
+        let arr: ActorsActresses[] = [];
+          let obj:ActorsActresses = {};
+          obj.id=element.id;
+          obj.name=element.name;
+          obj.img=element.img;
+          obj.series=element.series;
+          obj.movies=element.movies;
+          obj.animation=element.animation;
+          obj.birthday=element.birthday;
+          obj.info=element.info;
+          obj.birthplace=element.birthplace
+          arr.push(obj)
+        return arr;
+      })
+    );
+  }
+  get(name:string , id?:string){
     return this.http.get<any>('http://localhost:3000/'+name+'/'+id).pipe(
       map((element) => {
         let arr: MoviesDescription[] = [];
@@ -133,6 +155,7 @@ export class MoviesListService {
             obj.duration=element.duration
             obj.country=element.country
             obj.studio=element.studio
+            obj.season=element.season
             arr.push(obj)
         return arr;
       })

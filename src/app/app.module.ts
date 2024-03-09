@@ -16,6 +16,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatSelectModule} from '@angular/material/select';
 import { WatchingMovieComponent } from './features/watching-movie/component/watching-movie.component';
 import { CreateAccountComponent } from './features/create-account/component/create-account.component';
+import { PersonComponent } from './features/person/component/person.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CreateAccountComponent } from './features/create-account/component/crea
     FooterComponent,
    MoviesListComponent,
    WatchingMovieComponent,
-   CreateAccountComponent
+   CreateAccountComponent,
+   PersonComponent
   ],
   imports: [
     BrowserModule,

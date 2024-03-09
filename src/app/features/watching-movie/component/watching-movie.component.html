@@ -124,10 +124,11 @@
       </div>
     </div>
     <div class="recommendations-list list">
-      <div class="recommendations-card" *ngFor="let movie of movieslist">
+      <ng-container *ngFor="let movie of movieslist">
+      <div class="recommendations-card" >
         <img src="{{ movie.img }}" alt="" />
         <div>{{ movie.title }}</div>
-      </div>
+      </div> </ng-container>
     </div>
   </div>
 </div>

@@ -6,13 +6,13 @@
     <input placeholder="პაროლი" type="password">
     <input placeholder="გაიმეორე პაროლი" type="password">
     <button>რეგისტრაცია</button>
-    <div class="link-autorization">გაქვს ანგარიში? გაიარე <a href="">ავტორიზაცია</a></div>
+    <div class="link-autorization">გაქვს ანგარიში? გაიარე <a (click)="show()" >ავტორიზაცია</a></div>
 </div>
 <div class="registraion-card flex-column" *ngIf="!registration">
     <div class="registr">ავტორიზაცია</div>
     <input placeholder="ელ-ფოსტა" type="text">
     <input placeholder="პაროლი" type="password">
     <button>შესვლა</button>
-    <div class="link-autorization">გაქვს ანგარიში? გაიარე <a href="">რეგისტრაცია</a></div>
+    <div class="link-autorization">გაქვს ანგარიში? გაიარე <a (click)="show()" >რეგისტრაცია</a></div>
 </div>
 </div>
