@@ -1,0 +1,57 @@
+@media screen and (min-width:1024px) {
+  .registration {
+    position: relative;   
+img{        height: 89vh;
+}
+        .registraion-card {
+            border-radius: 8px;
+
+            padding: 0 40px 24px 40px;
+            position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+            .registr {
+
+                padding: 26px 0;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;    
+                margin-bottom: 48px;
+    
+            }
+    
+            input {
+                width: 398px;
+                height: 56px;
+                padding: 10px 16px;
+                margin-bottom: 14px;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+    
+            }
+    
+            button {
+                margin-top: 18px;
+                border-radius: 8px;
+                margin-bottom: 32px;
+                width: 398px;
+                padding: 12px 32px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+    
+            .link-autorization {
+              
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    
+    }
+
+}

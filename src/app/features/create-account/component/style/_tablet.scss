@@ -1,0 +1,59 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+ 
+  .registration {
+    img{
+        height: 93vh;
+
+    }
+        .registraion-card {
+            border-radius: 8px;
+
+            padding: 0 24px 24px 24px;
+            position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 10px;
+        transform: translate(-50%, -50%);
+            .registr {
+
+                padding: 26px 0;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;    
+                margin-bottom: 48px;
+    
+            }
+    
+            input {
+              width: 344px;
+                height: 56px;
+                padding: 10px 16px;
+                margin-bottom: 14px;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+    
+            }
+    
+            button {
+                margin-top: 18px;
+                border-radius: 8px;
+                margin-bottom: 32px;
+                width: 344px;                padding: 12px 32px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+    
+            .link-autorization {
+              
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    
+    }
+
+}

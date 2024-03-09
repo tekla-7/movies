@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MoviesListComponent } from '../../movies-list/component/movies-list.component';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-create-account',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './create-account.component.scss'
 })
 export class CreateAccountComponent {
-
+  registration:boolean=false;
+constructor( private activatedRoute:ActivatedRoute ){
+  this.activatedRoute.params.subscribe(
+    (params:Params)=>{
+     if(params['registration']=="registration"){
+      this.registration=true;
+     }
+    })
+}
 }
