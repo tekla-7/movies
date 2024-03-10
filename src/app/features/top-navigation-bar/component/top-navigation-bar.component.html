@@ -76,7 +76,7 @@
               (click)="opendropdown()"
             ></div>
             <ul [ngClass]="{ active: isdropdownophen, hide: !isdropdownophen }">
-              <li class="dropdown-menu-profile">
+              <li class="dropdown-menu-profile" (click)="opendropdown()" routerLink="/sign">
                 <span class="flex-row-center">
                   <span class="dropdown-menu-profile-icon ">
                     <svg
@@ -109,7 +109,7 @@
                   </svg>
                 </span>
               </li>
-              <li routerLink="">
+              <li routerLink="" (click)="opendropdown()">
                 <span>მთავარი</span>
                 <span>
                   <svg
@@ -126,7 +126,7 @@
                   </svg>
                 </span>
               </li>
-              <li routerLink="/type/movies">
+              <li routerLink="/type/movies" (click)="opendropdown()">
                 <span>ფილმები</span>
                 <span>
                   <svg
@@ -143,7 +143,7 @@
                   </svg>
                 </span>
               </li>
-              <li routerLink="/type/series">
+              <li routerLink="/type/series" (click)="opendropdown()">
                 <span>სერიალები</span>
                 <span>
                   <svg
@@ -160,7 +160,7 @@
                   </svg>
                 </span>
               </li>
-              <li routerLink="/type/animation">
+              <li routerLink="/type/animation" (click)="opendropdown()">
                 <span>ანიმაციები</span>
                 <span>
                   <svg
